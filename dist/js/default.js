@@ -1,12 +1,13 @@
 'use strict';
 
 class Api {
-    url = '/api';
+    //url = '/api';
     //url = 'https://putsreq.com/RWhI8ht10y5kqfmemrML';
+    url = 'https://mocki.io/v1/84954ef5-462f-462a-b692-6531e75c220d';
 
     async getElements() {
-      //const response = await fetch(this.url);
-      const response = await fetch('/api');
+      const response = await fetch(this.url);
+      //const response = await fetch('/api');
       const result = await response.json();
       console.log('Loaded', result);
       return result;
